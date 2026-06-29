@@ -1,0 +1,16 @@
+Exercise 2: Branching
+
+開新分支
+git switch -c feature/add-about
+
+切回來
+git switch main
+
+將新分支合併
+git merge feature/add-about
+
+刪除分支
+git branch -d feature/add-about
+
+看看分支
+git branch
