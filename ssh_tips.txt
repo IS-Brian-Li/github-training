@@ -1,0 +1,13 @@
+windows確認ssh agent是否開啟
+Get-Service ssh-agent
+
+開啟
+Start-Service ssh-agent
+
+建立SSH key
+ssh-keygen -t ed25519 -C "email@example.com"
+
+windows 加入SSH key
+ssh-add $env:USERPROFILE\.ssh\id_ed25519
+
+去.pub取得公鑰放入github
