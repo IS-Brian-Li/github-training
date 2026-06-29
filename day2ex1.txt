@@ -1,0 +1,28 @@
+1. 先同步主分支最新程式
+git pull origin main
+# 從遠端 GitHub 的 main 抓最新版本至本地
+
+2. 建立功能分支
+git checkout -b feature/my-feature
+# 建立一條新分支 feature/my-feature，並且切過去，之後的修改都不會影響 main
+
+3. 開發 + commit
+add和commit
+
+4. 推上遠端分支
+git push origin feature/my-feature
+
+5. pull request
+
+6. 合併後整理本地
+
+git checkout main
+# 回到主分支
+
+git pull origin main
+# 同步剛剛 PR merge 後的最新 main
+
+git branch -d
+# 刪掉本地 feature 分支
+
+總結：更新本地 main → 開分支開發 → commit → push → PR → 更新本地 main 並清理分支
